@@ -49,7 +49,6 @@ a:hover {
   color: var(--yellow);
   font-size: 1.5rem;
   margin: 4rem auto;
-  width: 100%;
 }
 
 .btn a {
@@ -109,6 +108,7 @@ a:hover {
   margin: 0 auto;
   padding: 1rem;
   word-spacing: 10px;
+  text-transform: uppercase;
 }
 
 /*First child container of wrapper must be set to
@@ -187,6 +187,22 @@ setting the "transform: translateZ() scale()" properties */
   margin: 2rem auto;
 }
 
+#resume-btn {
+  width: 80%;
+  transition: ease-in-out 0.35s;
+}
+
+#resume-btn:hover,
+#resume-btn:active,
+#resume-btn:focus {
+  transform: scale(1.1);
+  background: var(--yellow);
+  color: var(--dark-blue);
+  font-weight: bolder;
+  transition: ease-in-out 0.35s;
+  letter-spacing: 3px;
+}
+
 .heading {
   margin: 0 auto 1rem;
   line-height: 1;
@@ -197,7 +213,7 @@ setting the "transform: translateZ() scale()" properties */
 
 section p {
   line-height: 1.7;
-  font-size: 1.25rem;
+  font-size: 1rem;
 }
 
 #skills {
@@ -259,10 +275,9 @@ section p {
 }
 
 .projects {
-  /* background: linear-gradient(#000, #000, var(--dark-blue), var(--med-blue)); */
   background: var(--med-blue);
   color: var(--yellow);
-  padding: 4rem 2rem;
+  padding: 4rem 1rem;
 }
 
 .tools-used {
@@ -270,13 +285,13 @@ section p {
   list-style: none;
   flex-wrap: wrap;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   padding: 0;
 }
 
 .tools-used li {
   border: 1px solid white;
-  margin: 0.5rem auto;
+  margin: 0.5rem;
   /* margin-right: 1rem; */
   padding: 0.25rem 0.5rem;
   border-radius: 6px;
@@ -294,8 +309,9 @@ section p {
 }
 
 .single-project {
-  background: var(--dark-blue);
-  padding: 1rem 1rem 2rem;
+  backdrop-filter: blur(10px);
+  background: rgba(0, 8, 57, 0.8);
+  padding: 1rem 2rem 2rem;
   border-radius: 10px;
   margin-top: 2rem;
 }
@@ -321,11 +337,16 @@ section p {
   margin: 2rem auto 0;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 
 .links .btn {
   padding: 0.5rem 1rem;
-  margin: 0 1rem;
+  margin: 0 0.5rem;
   font-size: 0.8rem;
+  width: 50%;
+}
+
+.links .btn:first-child {
+  margin-left: 0;
 }

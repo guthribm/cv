@@ -5,15 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brandon Guthrie | Front-end Developer</title>
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:ital,wght@0,400;0,700;0,800;1,400&display=swap"
       rel="stylesheet"
     />
+    <!-- CSS -->
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
+    <!-- Wrapper for parallax effect -->
     <div class="wrapper">
       <header>
         <div id="sun"></div>
@@ -26,9 +29,11 @@
           <h1 class="title">
             Hi, I'm <span><strong>Brandon.</strong></span>
           </h1>
-          <h2 class="subtitle">A FRONT-END DEVELOPER</h2>
+          <h2 class="subtitle">a front-end web developer</h2>
         </div>
       </header>
+
+      <!-- About Me Section -->
       <section id="about">
         <img
           id="profile-img"
@@ -53,8 +58,10 @@
           I am currently looking to join a team that will help mentor an
           inquisitive problem-solver with a desire to learn.
         </p>
-        <button class="btn">Resume.pdf</button>
+        <button id="resume-btn" class="btn">Resume.pdf</button>
       </section>
+
+      <!-- Skills Section -->
       <section id="skills">
         <h2 class="heading skills-heading">Skills</h2>
         <div class="skill-container">
@@ -124,9 +131,12 @@
           </div>
         </div>
       </section>
+
+      <!-- My Projects Section -->
       <section class="projects">
         <h2 class="heading my-projects">My Projects</h2>
         <div class="projects-container">
+          <!-- One and Oney Project -->
           <div class="single-project">
             <img
               src="./images/oneyScreens.png"
@@ -156,6 +166,119 @@
               <button class="btn">
                 <a
                   href="https://github.com/guthribm/OneAndOney"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Visit Repo</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <!-- Simple BlackJack Project -->
+          <div class="single-project">
+            <img
+              src="./images/blackjack-screens.png"
+              alt="screenshots of simple blackjack app"
+            />
+            <h3><em>Simple BlackJack</em> App</h3>
+            <ul class="tools-used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+            <p>
+              Inspired by a couple of projects in the Scrimba Frontend Developer
+              Certification, this app consumes the deckofcardsapi.com API and
+              uses ES6 for the game logic as well as featuring a responsive
+              layout.
+            </p>
+            <div class="links">
+              <button class="btn site">
+                <a
+                  href="https://guthribm.github.io/SimpleBlackJack/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Visit Site</a
+                >
+              </button>
+              <button class="btn">
+                <a
+                  href="https://github.com/guthribm/SimpleBlackJack"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Visit Repo</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <!-- Rock, Paper, Scissors Project -->
+          <div class="single-project">
+            <img
+              src="./images/rps-screens.png"
+              alt="screenshots of rock paper scissors app"
+            />
+            <h3><em>Rock | Paper | Scissors</em> App</h3>
+            <ul class="tools-used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+            <p>
+              The most recent challenge from the FrontendMentor.io site, this
+              fully responsive app makes use of multiple event listeners and
+              time outs working in sync to simulate a smooth play experience.
+            </p>
+            <div class="links">
+              <button class="btn site">
+                <a
+                  href="https://guthribm.github.io/rock-paper-scissors/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Visit Site</a
+                >
+              </button>
+              <button class="btn">
+                <a
+                  href="https://github.com/guthribm/rock-paper-scissors"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Visit Repo</a
+                >
+              </button>
+            </div>
+          </div>
+
+          <!-- Splitter tip calculator Project -->
+          <div class="single-project">
+            <img
+              src="./images/splitter-screens.png"
+              alt="screenshots of rock paper scissors app"
+            />
+            <h3><em>Splitter</em> Tip Calculator App</h3>
+            <ul class="tools-used">
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JAVASCRIPT</li>
+            </ul>
+            <p>
+              This app is one of several challenges from the FrontendMentor.io
+              website and features a responsive design using flexbox and grid
+              with a different layout for screens over 1000px. I altered the
+              input locations slightly for a better UX.
+            </p>
+            <div class="links">
+              <button class="btn site">
+                <a
+                  href="https://guthribm.github.io/splitter-tip-calculator/"
+                  target="_blank"
+                  rel="noreferrer"
+                  >Visit Site</a
+                >
+              </button>
+              <button class="btn">
+                <a
+                  href="https://github.com/guthribm/splitter-tip-calculator"
                   target="_blank"
                   rel="noreferrer"
                   >Visit Repo</a
