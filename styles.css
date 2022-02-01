@@ -69,11 +69,36 @@ nav {
   display: none;
   justify-content: space-between;
   align-items: center;
+  background: var(--dark-blue);
+  transform: translateY(-4rem);
 }
 
 nav ul {
   display: flex;
   list-style: none;
+}
+
+.logo {
+  color: var(--yellow);
+  margin-left: 0.5rem;
+  transition: ease-in-out 0.35s;
+}
+
+.logo:hover,
+.logo:focus,
+.logo:active {
+  transform: scale(1.1);
+}
+
+.logo:visited {
+  color: var(--yellow);
+  opacity: 0.9;
+}
+
+#hamburger {
+  color: var(--yellow);
+  font-size: 1.5rem;
+  margin-right: 1rem;
 }
 
 #sun {
@@ -357,7 +382,7 @@ section p {
 }
 
 .links {
-  margin: 4rem auto 0;
+  margin: 2rem auto 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
