@@ -62,6 +62,25 @@ a:hover {
   border-color: var(--yellow);
 }
 
+nav {
+  height: 4rem;
+  background: white;
+  margin: 0;
+  padding: 0.5rem;
+  position: sticky;
+  top: 0;
+  z-index: 5;
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  /* transform: translateZ(-30px) scale(2); */
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
 #sun {
   width: 8rem;
   height: 8rem;
