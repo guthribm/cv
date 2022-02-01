@@ -389,6 +389,8 @@ section p {
 .contact-heading {
   margin: 0 auto 2rem;
   color: var(--dark-blue);
+  padding-bottom: 1rem;
+  border-bottom: 4px solid var(--dark-blue);
 }
 
 form {
@@ -414,6 +416,7 @@ form {
   width: 50%;
   background: var(--dark-blue);
   color: var(--yellow);
+  font-weight: bolder;
 }
 
 .contacts-container {
