@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brandon Guthrie | Front-end Developer</title>
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/5c4d7aafc6.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -49,16 +54,16 @@
         <h2 class="heading">That's me on the left.</h2>
         <p>
           I love coding almost as much as my little buddy Scout loves sleeping.
-          And he really likes to sleep.. 🤣
+          And he really likes to sleep. 🤣
         </p>
         <p>
           I am a self-taught programmer that enjoys creating beautiful web pages
           and apps written in Semantic HTML5 and responsive CSS3.
         </p>
         <p>
-          While the first (and probably favorite) programming language that I
-          learned was Python at the beginning of 2021, I spend most of my time
-          now writing in JavaScript ES6.
+          While the first (and probably my favorite) programming language that I
+          learned was Python at the beginning of 2021, but I spend most of my
+          time now writing in JavaScript ES6.
         </p>
         <p>
           I am currently looking to join a team that will help mentor an
@@ -72,28 +77,24 @@
         <h2 class="heading skills-heading">Skills</h2>
         <div class="skill-container">
           <div class="icon-container">
-            <img
-              class="img skill-icon"
-              src="./images/html-5.png"
-              alt="html5 logo"
-            />
+            <i class="fab fa-html5"></i>
             <p>HTML5</p>
           </div>
           <div class="icon-container">
-            <img
-              class="img skill-icon"
-              src="./images/skill-css-3.png"
-              alt="css3 logo"
-            />
+            <i class="fab fa-css3-alt"></i>
             <p>CSS3</p>
           </div>
           <div class="icon-container">
-            <img
-              class="img skill-icon"
-              src="./images/skill-js.png"
-              alt="javascript logo"
-            />
+            <i class="fab fa-css3-alt"></i>
             <p>JAVASCRIPT ES6</p>
+          </div>
+          <div class="icon-container">
+            <i class="fab fa-python"></i>
+            <p>PYTHON</p>
+          </div>
+          <div class="icon-container">
+            <i class="fab fa-react"></i>
+            <p>REACT</p>
           </div>
           <div class="icon-container">
             <img
@@ -104,35 +105,11 @@
             <p>JQUERY</p>
           </div>
           <div class="icon-container">
-            <img
-              class="img skill-icon"
-              src="./images/skill-python.png"
-              alt="python logo"
-            />
-            <p>PYTHON</p>
-          </div>
-          <div class="icon-container">
-            <img
-              class="img skill-icon"
-              src="./images/skill-react.png"
-              alt="react logo"
-            />
-            <p>REACT</p>
-          </div>
-          <div class="icon-container">
-            <img
-              class="img skill-icon"
-              src="./images/skill-git.png"
-              alt="git logo"
-            />
+            <i class="fab fa-git-square"></i>
             <p>GIT</p>
           </div>
           <div class="icon-container">
-            <img
-              class="img skill-icon"
-              src="./images/skill-figma.png"
-              alt="figma logo"
-            />
+            <i class="fab fa-figma"></i>
             <p>FIGMA</p>
           </div>
         </div>
@@ -231,7 +208,7 @@
               <li>JAVASCRIPT</li>
             </ul>
             <p>
-              The most recent challenge from the FrontendMentor.io site, this
+              One of my recent challenges from the FrontendMentor.io site, this
               fully responsive app makes use of multiple event listeners and
               time outs working in sync to simulate a smooth play experience.
             </p>
@@ -261,7 +238,7 @@
               src="./images/splitter-screens.png"
               alt="screenshots of rock paper scissors app"
             />
-            <h3><em>Splitter</em> Tip Calculator App</h3>
+            <h3><em>Splitter Tip Calculator</em> App</h3>
             <ul class="tools-used">
               <li>HTML</li>
               <li>CSS</li>
@@ -294,6 +271,83 @@
           </div>
         </div>
       </section>
+
+      <!-- Contact Me Section -->
+      <section class="contact-me-section">
+        <h2 class="heading contact-heading">Contact Me</h2>
+        <p>
+          If you're interested in working on something together or just want to
+          connect, fell free to send me a message!
+        </p>
+        <form action="https://formsubmit.co/guthribm@gmail.com" method="POST">
+          <label for="name"></label>
+          <input
+            class="contact-form"
+            type="text"
+            name="name"
+            placeholder="Name"
+            required
+          />
+          <label for="email"></label>
+          <input
+            class="contact-form"
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
+          <label for="comment"></label>
+          <textarea
+            class="contact-form"
+            type="text"
+            rows="6"
+            cols="50"
+            name="comment"
+            form="usrform"
+            placeholder="Leave a message!"
+          ></textarea>
+          <input type="hidden" name="_subject" value="Portfolio Email!" />
+          <input
+            type="hidden"
+            name="_next"
+            value="https://guthribm.github.io/cv/"
+          />
+          <button class="btn form-submit" type="submit">Send</button>
+        </form>
+      </section>
+
+      <!-- Footer Section -->
+      <footer>
+        <div class="contacts-container">
+          <!-- Email -->
+          <a
+            href="mailto:guthribm@gmail.com"
+            class="contact-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="far fa-envelope-open contact-icon"></i
+          ></a>
+          <!-- LinkedIn -->
+          <a
+            href="https://www.linkedin.com/in/guthribm/"
+            class="contact-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fab fa-linkedin contact-icon"></i
+          ></a>
+          <!-- Github -->
+          <a
+            href="https://www.linkedin.com/in/guthribm/"
+            class="contact-link"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <i class="fab fa-github contact-icon"></i
+          ></a>
+        </div>
+      </footer>
     </div>
     <script src="./index.js"></script>
   </body>
