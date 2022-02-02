@@ -13,10 +13,17 @@ let navBar = $("#navbar");
 let today = new Date();
 date[0].textContent = today.getFullYear();
 
-// console.log("menu links length: " + menuLinks.length);
-// menuLinks.map((link) => {
-//   console.log("link: " + link);
-// });
+console.log(
+  "menu links length: " + menuLinks.length + " links: " + menuLinks[0]
+);
+
+let menuLinkButtons = document.querySelectorAll(".menu-link");
+
+menuLinkButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    menu.toggleClass("invisible");
+  });
+});
 
 function menuHandler() {
   menu.toggleClass("invisible");
@@ -28,13 +35,6 @@ $(".wrapper").on("click", () => {
   console.log("window was clicked");
   menu.addClass("invisible");
 });
-
-// let lastKnownScrollPosition = 0;
-
-// document.addEventListener("scroll", function (e) {
-//   lastKnownScrollPosition = window.scrollY;
-//   console.log(`y position: ${lastKnownScrollPosition}\nevent: ${e}`);
-// });
 
 // Intersection Observer for About Me Text
 const sections = document.querySelectorAll(".fade-in");
@@ -64,11 +64,9 @@ const skills = document.querySelectorAll(".icon-container");
 const skillsObserver = new IntersectionObserver(function (entries, observer) {
   entries.forEach((entry) => {
     entry.target.classList.toggle("icon-change");
-    // console.log(`entry: ${entry.target}`);
   });
 }, skillsOptions);
 
 skills.forEach((skill) => {
-  //   console.log("skill: " + skill);
   skillsObserver.observe(skill);
 });
