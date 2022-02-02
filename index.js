@@ -25,7 +25,8 @@ function menuHandler() {
 menuBtn.on("click", menuHandler);
 
 $(".wrapper").on("click", () => {
-  menu.add(".invisible");
+  console.log("window was clicked");
+  menu.addClass("invisible");
 });
 
 // let lastKnownScrollPosition = 0;
@@ -46,10 +47,28 @@ const options = {
 const observer = new IntersectionObserver(function (entries, observer) {
   entries.forEach((entry) => {
     entry.target.classList.toggle("fade-in");
-    console.log(`entry: ${entry.target}`);
   });
 }, options);
 
 sections.forEach((section) => {
   observer.observe(section);
+});
+
+// Intersection Observer for About Me Text
+const skillsOptions = {
+  root: null,
+  threshold: 0,
+  rootMargin: "0px 0px 100px 0px",
+};
+const skills = document.querySelectorAll(".icon-container");
+const skillsObserver = new IntersectionObserver(function (entries, observer) {
+  entries.forEach((entry) => {
+    entry.target.classList.toggle("icon-change");
+    // console.log(`entry: ${entry.target}`);
+  });
+}, skillsOptions);
+
+skills.forEach((skill) => {
+  //   console.log("skill: " + skill);
+  skillsObserver.observe(skill);
 });

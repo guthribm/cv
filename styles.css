@@ -206,8 +206,16 @@ nav ul {
   font-size: 3.5rem;
   z-index: 1;
   margin: 0;
-  padding: 2rem 2rem 1rem;
-  line-height: 1;
+  padding: 2rem 2rem 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+hr {
+  width: 70%;
+  height: 3px;
+  background: var(--yellow);
+  border: none;
 }
 
 .subtitle {
@@ -321,8 +329,8 @@ setting the "transform: translateZ() scale()" properties */
 section p {
   line-height: 1.7;
   font-size: 1rem;
-  transform: translateX(-10rem);
-  opacity: 0.4;
+  transform: translateX(-5rem);
+  opacity: 0.1;
   transition: ease-in-out 0.5s;
 }
 
@@ -375,7 +383,7 @@ section p {
   /* box-shadow: 0 0 8px rgba(0, 8, 57, 0.5), 0 0 20px rgba(0, 8, 57, 0.3); */
   padding: 0.75rem 1rem;
   text-align: center;
-  border-radius: 40px;
+  border-radius: 0;
   background: var(--dark-blue);
   color: var(--light-blue);
   transition: ease-out 0.3s;
@@ -385,10 +393,11 @@ section p {
   aspect-ratio: 1 / 1;
 }
 
-.icon-container:hover {
+.icon-change {
   background: var(--light-blue);
   color: var(--dark-blue);
-  border-radius: 0;
+  border-radius: 40px;
+  transition: ease-in-out 1s;
 }
 
 .icon-container p {
@@ -398,7 +407,7 @@ section p {
   padding: 0;
   font-size: 0.85rem;
   line-height: 1;
-  color: var(--light-blue);
+  color: inherit;
   opacity: 1;
   transform: translateX(0);
 }
@@ -459,6 +468,11 @@ section p {
   margin-right: 0.5rem;
 }
 
+.single-project img {
+  background: var(--yellow);
+  margin: 1rem auto;
+}
+
 .single-project p {
   font-size: 1rem;
 }
@@ -490,6 +504,8 @@ section p {
 .contact-me-section p {
   font-size: 1.25rem;
   margin-bottom: 3rem;
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .contact-heading {
@@ -519,11 +535,28 @@ form {
 .form-submit {
   padding: 0.75rem 1.5rem;
   margin: 1rem 0;
+  max-width: 300px;
+  border-width: 4px;
   width: 70%;
   background: var(--dark-blue);
   color: #fff;
-  font-weight: bolder;
   align-self: center;
+  transition: ease-in-out 0.3s;
+  font-weight: normal;
+}
+
+.form-submit:hover,
+.form-submit:active,
+.form-submit:focus {
+  /* background: var(--yellow); */
+  color: var(--dark-blue);
+  border-color: var(--dark-blue);
+  transform: scale(1.1);
+  font-size: 1.75rem;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  box-shadow: inset -20rem 0 0 0 var(--yellow), -5px 9px 3px rgba(0, 8, 57, 0.5);
+  transform: translateY(-3px);
 }
 
 .contacts-container {
