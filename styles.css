@@ -405,11 +405,22 @@ section p {
   max-width: 165px;
 }
 
-.icon-change {
+/* .icon-change {
   background: var(--light-blue);
   color: var(--dark-blue);
   border-radius: 40px;
   transition: ease-in-out 1s;
+} */
+
+.icon-change {
+  box-shadow: inset 0 15rem 0 0 var(--light-blue),
+    inset 0 -15rem 0 0 var(--light-blue), -10px 13px 3px rgba(0, 8, 57, 0.5);
+  transform: translateY(-1rem) translateX(1rem);
+  transition: ease-out 0.8s;
+  color: var(--dark-blue);
+  transform: scale(1.1);
+  background: none;
+  margin-bottom: 1rem;
 }
 
 .icon-container p {
@@ -473,7 +484,7 @@ section p {
   background: rgba(0, 8, 57, 0.8);
   padding: 1rem 2rem 2rem;
   border-radius: 10px;
-  max-width: 400px;
+  max-width: 450px;
   justify-self: center;
   display: flex;
   flex-direction: column;
@@ -515,7 +526,6 @@ section p {
 .links .btn {
   margin: 0 0.5rem;
   font-size: 0.8rem;
-  width: 50%;
   padding: 0.5rem;
 }
 
@@ -637,7 +647,7 @@ form {
   }
 
   .heading {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .btn {
@@ -674,3 +684,89 @@ form {
     font-size: 0.9rem;
   }
 }
+
+/* -----------  Media Query (min 1000)
+------------------------------ */
+
+@media (min-width: 1000px) {
+  .hero__title_container {
+    left: 5vw;
+    top: 12vh;
+    position: relative;
+  }
+
+  #profile-img {
+    margin-top: 4rem;
+  }
+
+  #about .heading {
+    margin: 1rem auto 2rem;
+  }
+
+  #about p {
+    margin: 0 auto 1.25rem;
+  }
+
+  .title,
+  .subtitle {
+    margin: 0;
+    padding: 0;
+  }
+
+  #sun {
+    margin-bottom: 0;
+    position: relative;
+    bottom: 90vh;
+    left: 100vw;
+    width: 12rem;
+    height: 12rem;
+  }
+
+  .heading {
+    font-size: 4rem;
+    margin: 2rem auto 4rem;
+  }
+
+  .skill-container {
+    row-gap: 4rem;
+    column-gap: 0;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+
+  .my-projects {
+    margin: 2rem auto 5rem;
+  }
+
+  .projects-container {
+    gap: 5rem;
+  }
+}
+
+/* -----------  Media Query (min 1200)
+------------------------------ */
+
+@media (min-width: 1200px) {
+  .skill-container {
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  }
+
+  .icon-container {
+    max-width: 225px;
+  }
+
+  .fab {
+    font-size: 7rem;
+  }
+
+  .icon-container p {
+    font-size: 1.25rem;
+  }
+
+  /* .single-project {
+    flex-direction: row;
+  } */
+}
+
+/* * {
+  border: 1px solid red;
+} */
