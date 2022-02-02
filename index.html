@@ -3,6 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="theme-color" content="#000839" />
+    <meta name="author" content="Brandon Guthrie" />
+    <meta
+      name="description"
+      content="My name is Brandon and I am a Front-end Web Developer skilled in creating web pages and apps in Semantic HTML5 and responsive CSS. Let's work together!"
+    />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brandon Guthrie | Front-end Developer</title>
     <!-- Font Awesome -->
@@ -21,18 +27,31 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <nav>
-      <a
-        class="logo"
-        href="https://guthribm.github.io/cv/"
-        target="_blank"
-        rel="noreferrer"
-        >Brandon Guthrie</a
-      >
+    <nav id="navbar">
+      <a class="logo" href="#home-target">BG</a>
       <div id="hamburger"><i class="fas fa-bars"></i></div>
     </nav>
+    <div id="menu" class="menu invisible">
+      <ul class="menu-list">
+        <li><a class="menu-link slide test" href="#home">Home</a></li>
+        <li><a class="menu-link slide test" href="#about">About</a></li>
+        <li>
+          <a class="menu-link slide test" href="#skills">Skills</a>
+        </li>
+        <li>
+          <a class="menu-link slide test" href="#projects">Projects</a>
+        </li>
+        <li>
+          <a class="menu-link slide test" href="#contact">Contact</a>
+        </li>
+        <li>
+          <a class="menu-link slide test" href="#footer">Social Media</a>
+        </li>
+      </ul>
+    </div>
     <!-- Wrapper for parallax effect -->
     <div class="wrapper">
+      <div class="link-target" id="home"></div>
       <header>
         <div id="sun"></div>
         <img src="./images/geometric mountains_png.png" class="background" />
@@ -42,13 +61,14 @@
         />
         <div class="hero__title_container">
           <h1 class="title">
-            Hi, I'm <span><strong>Brandon.</strong></span>
+            Hi, I'm <span><strong>Brandon</strong></span>
           </h1>
           <h2 class="subtitle">a front-end web developer</h2>
         </div>
       </header>
 
       <!-- About Me Section -->
+      <div class="link-target" id="about-target"></div>
       <section id="about">
         <img
           id="profile-img"
@@ -56,20 +76,20 @@
           alt="me holding a sleeping doggo"
         />
         <h2 class="heading">That's me on the left.</h2>
-        <p>
+        <p class="fade-in">
           I love coding about as much as my little buddy Scout loves sleeping.
           And he really likes to sleep. 🤣
         </p>
-        <p>
+        <p class="fade-in">
           I am a self-taught programmer that enjoys creating beautiful web pages
           and apps written in Semantic HTML5 and responsive CSS3.
         </p>
-        <p>
+        <p class="fade-in">
           While the first (and probably my favorite) programming language that I
           learned was Python at the beginning of 2021, but I spend most of my
           time now writing in JavaScript ES6.
         </p>
-        <p>
+        <p class="fade-in">
           I am currently looking to join a team that will help mentor an
           inquisitive problem-solver with a desire to learn.
         </p>
@@ -84,6 +104,7 @@
       </section>
 
       <!-- Skills Section -->
+      <div class="link-target" id="skills-target"></div>
       <section id="skills">
         <h2 class="heading skills-heading">Skills</h2>
         <div class="skill-container">
@@ -127,7 +148,8 @@
       </section>
 
       <!-- My Projects Section -->
-      <section class="projects">
+      <div class="link-target" id="projects-target"></div>
+      <section id="projects" class="projects">
         <h2 class="heading my-projects">My Projects</h2>
         <div class="projects-container">
           <!-- One and Oney Project -->
@@ -284,7 +306,8 @@
       </section>
 
       <!-- Contact Me Section -->
-      <section class="contact-me-section">
+      <div class="link-target" id="contact-target"></div>
+      <section id="contact" class="contact-me-section">
         <h2 class="heading contact-heading">Contact Me</h2>
         <p>
           If you're interested in working together or just want to connect, fell
@@ -328,7 +351,8 @@
       </section>
 
       <!-- Footer Section -->
-      <footer>
+      <div class="link-target" id="footer-target"></div>
+      <footer id="footer">
         <div class="contacts-container">
           <!-- Email -->
           <a
@@ -366,6 +390,11 @@
         </div>
       </footer>
     </div>
-    <script src="./index.js"></script>
+    <!-- <script defer src="./index.js"></script> -->
+    <script
+      defer
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+    ></script>
+    <script defer type="text/javascript" src="index.js"></script>
   </body>
 </html>
