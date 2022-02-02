@@ -188,7 +188,7 @@ nav ul {
   align-items: center;
   justify-content: center;
   position: absolute;
-  bottom: 35%;
+  bottom: 25%;
   left: 0;
   width: 100%;
   transform-style: preserve-3d;
@@ -399,6 +399,8 @@ section p {
   font-size: 0.85rem;
   line-height: 1;
   color: var(--light-blue);
+  opacity: 1;
+  transform: translateX(0);
 }
 
 .projects {
