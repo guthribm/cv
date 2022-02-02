@@ -41,7 +41,7 @@ const sections = document.querySelectorAll(".fade-in");
 const options = {
   root: null,
   threshold: 0,
-  rootMargin: "0px 0px -100px 0px",
+  rootMargin: "0px 0px -150px 0px",
 };
 
 const observer = new IntersectionObserver(function (entries, observer) {
@@ -58,7 +58,7 @@ sections.forEach((section) => {
 const skillsOptions = {
   root: null,
   threshold: 0,
-  rootMargin: "0px 0px -100px 0px",
+  rootMargin: "0px 0px -175px 0px",
 };
 const skills = document.querySelectorAll(".icon-container");
 const skillsObserver = new IntersectionObserver(function (entries, observer) {
