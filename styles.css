@@ -648,9 +648,13 @@ form {
     padding: 2rem;
   }
 
+  .icon-container {
+    transform: translateY(1rem) translateX(-1rem);
+  }
+
   .icon-change {
     transform: scale(1.1);
-    transform: translateY(-1rem) translateX(1rem);
+    /* transform: translateY(-1rem) translateX(1rem); */
   }
 
   .heading {
@@ -698,7 +702,20 @@ form {
   .hero__title_container {
     left: 5vw;
     top: 12vh;
+    padding: 2rem;
     position: relative;
+  }
+
+  .foreground {
+    margin-bottom: 11rem;
+  }
+
+  #sun {
+    bottom: 70vh;
+  }
+
+  .background {
+    transform: translateZ(-10px) scale(2) translateY(15vh);
   }
 
   #profile-img {
@@ -707,6 +724,7 @@ form {
 
   #about .heading {
     margin: 1rem auto 2rem;
+    max-width: 100%;
   }
 
   #about p {
@@ -752,12 +770,37 @@ form {
 ------------------------------ */
 
 @media (min-width: 1200px) {
+  #profile-img {
+    margin: 8rem auto 4rem;
+    max-width: 375px;
+  }
+  #about .heading {
+    max-width: 100%;
+    margin-bottom: 6rem;
+  }
+
+  .foreground {
+    padding-top: 0;
+    transform: translateZ(-5px) scale(2) translateY(5rem);
+  }
+
+  #about p {
+    font-size: 1.5rem;
+  }
+
+  .hero__title_container {
+    left: 0;
+    top: 10vh;
+  }
+
   .skill-container {
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    max-width: 1440px;
+    margin: 2rem auto;
   }
 
   .icon-container {
-    max-width: 225px;
+    max-width: 250px;
   }
 
   .fab {
@@ -780,7 +823,7 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
-    max-width: 800px;
+    max-width: 1100px;
   }
   .left {
     display: flex;
@@ -807,11 +850,24 @@ form {
   }
 
   .right p {
-    font-size: 1.1rem;
+    font-size: 1.25rem;
   }
 
   .links {
     justify-content: space-evenly;
+  }
+
+  #contact p {
+    font-size: 1.5rem;
+  }
+}
+
+/* -----------  Media Query (min 2000)
+------------------------------ */
+
+@media (min-width: 2000px) {
+  .hero__title_container {
+    left: -12vw;
   }
 }
 
