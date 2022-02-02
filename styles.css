@@ -410,6 +410,7 @@ section p {
   color: inherit;
   opacity: 1;
   transform: translateX(0);
+  transition: 0.1s;
 }
 
 .projects {
