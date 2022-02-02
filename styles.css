@@ -679,7 +679,6 @@ form {
 
   .contact-link {
     font-size: 1rem;
-    justify-self: flex-start;
   }
 
   .contacts-container {
@@ -765,13 +764,55 @@ form {
     font-size: 7rem;
   }
 
+  .contact-icon {
+    font-size: 2.5rem;
+  }
+
   .icon-container p {
     font-size: 1.25rem;
   }
 
-  /* .single-project {
-    flex-direction: row;
-  } */
+  .projects-container {
+    grid-template-columns: 1fr;
+  }
+
+  .single-project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    max-width: 800px;
+  }
+  .left {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-right: 2rem;
+  }
+
+  .left em,
+  .left h3 {
+    font-size: 1.5rem;
+  }
+
+  .tools-used li {
+    font-size: 0.8rem;
+  }
+
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+  }
+
+  .right p {
+    font-size: 1.1rem;
+  }
+
+  .links {
+    justify-content: space-evenly;
+  }
 }
 
 /* * {
