@@ -330,7 +330,7 @@ section p {
   line-height: 1.7;
   font-size: 1rem;
   transform: translateX(-5rem);
-  opacity: 0.1;
+  opacity: 0;
   transition: ease-in-out 0.5s;
 }
 
