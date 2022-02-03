@@ -936,6 +936,7 @@ form {
 
   .links .btn {
     margin-left: 2rem;
+    width: 90%;
   }
 
   #contact p {
