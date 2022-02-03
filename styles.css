@@ -704,6 +704,10 @@ form {
     position: relative;
   }
 
+  .wrapper {
+    scrollbar-width: 15px;
+  }
+
   .invisible {
     right: 25px;
   }
@@ -712,7 +716,6 @@ form {
   ::-webkit-scrollbar {
     width: 15px;
     z-index: 11;
-    scrollbar-width: 15px;
   }
 
   /* Track */
@@ -814,9 +817,12 @@ form {
 ------------------------------ */
 
 @media (min-width: 1200px) {
+  .wrapper {
+    scrollbar-width: 25px;
+  }
+
   ::-webkit-scrollbar {
     width: 25px;
-    scrollbar-width: 25px;
   }
 
   .btn a {
