@@ -87,10 +87,6 @@ nav ul {
   display: flex;
   list-style: none;
 }
-/* 
-.nav-area.animate {
-  top: -5rem;
-} */
 
 .menu {
   background: var(--yellow);
@@ -131,11 +127,6 @@ nav ul {
   margin: 0.5rem auto;
   transition: ease-in 0.35s;
 }
-
-/* .link-target {
-  position: relative;
-  bottom: 4rem;
-} */
 
 .menu-link:hover,
 .menu-link:active,
@@ -272,7 +263,6 @@ and "scale()" will decrease proportionally to the wrapper
 "perspective" property*/
 .foreground {
   transform: translateY(12rem) translateZ(-5px) scale(2);
-
   margin-bottom: 2rem;
 }
 
@@ -379,7 +369,6 @@ section p {
 
 .skill-icon {
   width: 70%;
-  /* margin: 1rem 1rem 0.5rem; */
 }
 
 .skill-container {
@@ -387,9 +376,7 @@ section p {
   justify-content: center;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  row-gap: 1.5rem;
-  column-gap: 1.5rem;
-  /* gap: 1.5rem; */
+  gap: 1.5rem;
   margin: 3rem auto;
 }
 
@@ -399,7 +386,6 @@ section p {
   justify-content: center;
   align-items: center;
   justify-self: center;
-  /* box-shadow: 0 0 8px rgba(0, 8, 57, 0.5), 0 0 20px rgba(0, 8, 57, 0.3); */
   padding: 0.75rem 1rem;
   text-align: center;
   border-radius: 0;
@@ -408,7 +394,6 @@ section p {
   transition: ease-out 0.3s;
   z-index: 5;
   width: 100%;
-  /* height: 100%; */
   aspect-ratio: 1 / 1;
   max-width: 165px;
   transform: translateY(0.35rem) translateX(-0.35rem);
@@ -422,16 +407,6 @@ section p {
   transform: translateY(0) translateX(0);
   box-shadow: -8px 8px 3px rgba(0, 8, 57, 0.4);
 }
-
-/* .icon-change {
-  box-shadow: inset 0 15rem 0 0 var(--light-blue),
-    inset 0 -15rem 0 0 var(--light-blue), -10px 13px 3px rgba(0, 8, 57, 0.5);
-    
-  transition: ease-out 0.8s;
-  color: var(--dark-blue);
-  background: none;
-  margin-bottom: 1rem;
-} */
 
 .icon-container p {
   margin: 0;
@@ -464,7 +439,6 @@ section p {
 .tools-used li {
   border: 1px solid white;
   margin: 0 0.5rem 0.5rem 0;
-  /* margin-right: 1rem; */
   padding: 0.25rem 0.5rem;
   border-radius: 6px;
   color: white;
@@ -589,7 +563,6 @@ form {
   align-items: flex-start;
   max-width: 600px;
   margin: 0 auto;
-  /* padding: 2rem; */
 }
 
 .contact-form {
@@ -617,7 +590,6 @@ form {
 .form-submit:hover,
 .form-submit:active,
 .form-submit:focus {
-  /* background: var(--yellow); */
   color: var(--dark-blue);
   border-color: var(--dark-blue);
   transform: scale(1.1);
@@ -679,7 +651,6 @@ form {
 
   .icon-change {
     transform: scale(1.1);
-    /* transform: translateY(-1rem) translateX(1rem); */
   }
 
   .heading {
@@ -697,10 +668,6 @@ form {
   .contact-me-section p {
     text-align: center;
   }
-
-  /* .btn a {
-    padding: 1rem;
-  } */
 
   .contact-link {
     font-size: 1rem;
@@ -755,11 +722,6 @@ form {
   .menu {
     right: 15px;
   }
-
-  /* Handle on hover */
-  /* ::-webkit-scrollbar-thumb:hover {
-  background: #555;
-} */
 
   .foreground {
     margin-bottom: 11rem;
