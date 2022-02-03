@@ -57,7 +57,7 @@ a {
 
 .btn a {
   color: inherit;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 0.5rem;
 }
 
 .site {
@@ -916,6 +916,7 @@ form {
 
   .tools-used li {
     font-size: 0.8rem;
+    margin: 0 1rem 0.5rem 0;
   }
 
   .right {
@@ -935,7 +936,7 @@ form {
   }
 
   .links .btn {
-    margin-right: 2rem;
+    margin-left: 2rem;
   }
 
   #contact p {
