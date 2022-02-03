@@ -841,10 +841,15 @@ form {
 
   #navbar {
     width: calc(100% - 25px);
+    height: 6rem;
   }
 
   .menu {
     right: 25px;
+  }
+
+  .invisible {
+    top: 2rem;
   }
 
   #profile-img {
