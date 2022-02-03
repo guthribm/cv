@@ -163,6 +163,16 @@ nav ul {
   font-size: 1.5rem;
   margin-right: 1rem;
   position: static;
+  padding: 0.25rem 0.5rem;
+  border: 3px solid transparent;
+  transition: ease-in-out 0.25s;
+}
+
+#hamburger:hover {
+  border-radius: 4px;
+  cursor: pointer;
+  border-color: var(--yellow);
+  color: #fff;
 }
 
 #sun {
