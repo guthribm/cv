@@ -527,6 +527,13 @@ section p {
   font-size: 1rem;
 }
 
+.right {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .links {
   margin: 2rem auto 0;
   display: flex;
@@ -656,6 +663,7 @@ form {
   .skill-container {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 2rem;
+    row-gap: 2.5rem;
   }
 
   .icon-container {
@@ -706,7 +714,7 @@ form {
 
 @media (min-width: 1000px) {
   .hero__title_container {
-    left: 0vw;
+    left: 23vw;
     top: -15vh;
     padding: 2rem;
     position: relative;
@@ -798,7 +806,7 @@ form {
   }
 
   .links .btn {
-    font-size: 1.25rem;
+    font-size: 1rem;
   }
 
   .projects-container {
@@ -816,6 +824,10 @@ form {
 @media (min-width: 1200px) {
   ::-webkit-scrollbar {
     width: 25px;
+  }
+
+  .btn a {
+    padding: 0;
   }
 
   #navbar {
@@ -837,7 +849,7 @@ form {
   }
 
   #about hr {
-    margin-bottom: 8rem;
+    margin: 0 auto 6rem;
   }
 
   #about p {
@@ -873,7 +885,7 @@ form {
   }
 
   .projects-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
     max-width: 1900px;
     margin-bottom: 8rem;
   }
@@ -909,7 +921,7 @@ form {
   }
 
   .right p {
-    font-size: 1.5rem;
+    font-size: 1.15rem;
   }
 
   .links {
