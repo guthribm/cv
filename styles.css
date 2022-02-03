@@ -326,12 +326,10 @@ setting the "transform: translateZ() scale()" properties */
 #resume-btn:hover,
 #resume-btn:active,
 #resume-btn:focus {
-  transform: scale(1.1);
   background: var(--yellow);
   color: var(--dark-blue);
   font-weight: bolder;
   transition: ease-in-out 0.35s;
-  letter-spacing: 3px;
 }
 
 .heading {
