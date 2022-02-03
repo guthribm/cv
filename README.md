@@ -1,5 +1,9 @@
 # Brandon's Frontend Portfolio
 
+### Screenshot
+
+![](./images/Portfolio_Screenshot.jpg)
+
 Hello and welcome! My name is Brandon and I am a front-end web developer.
 
 ## Table of contents
@@ -16,10 +20,6 @@ Hello and welcome! My name is Brandon and I am a front-end web developer.
 ## Overview
 
 A portfolio site providing project examples, skills, resume, and contact form. Parallax backgrounds, Intersection Observers, custom animation effects, custom SVG backgrounds, event listeners, and more used throughout.
-
-### Screenshot
-
-![](./images/Portfolio_Screenshot.jpg)
 
 ### Links
 
