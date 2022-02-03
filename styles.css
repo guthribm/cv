@@ -527,8 +527,16 @@ section p {
 .links .btn:hover,
 .links .btn:focus,
 .links .btn:active {
-  background: var(--yellow);
-  color: var(--dark-blue);
+  background: var(--med-blue);
+  color: var(--yellow);
+  font-weight: bolder;
+}
+
+.links .site:hover,
+.links .site:focus,
+.links .site:active {
+  background: var(--med-blue);
+  font-weight: bolder;
 }
 
 .links .btn:first-child {
