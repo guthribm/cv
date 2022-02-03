@@ -885,7 +885,7 @@ form {
   }
 
   .projects-container {
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(575px, 1fr));
     max-width: 1900px;
     margin-bottom: 8rem;
   }
@@ -925,7 +925,11 @@ form {
   }
 
   .links {
-    justify-content: space-evenly;
+    justify-content: flex-start;
+  }
+
+  .links .btn {
+    margin-right: 2rem;
   }
 
   #contact p {
