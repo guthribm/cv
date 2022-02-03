@@ -806,6 +806,7 @@ form {
 
   .projects-container {
     gap: 5rem;
+    padding: 4rem;
   }
 
   .contact-heading {
