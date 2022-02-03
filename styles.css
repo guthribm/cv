@@ -91,7 +91,7 @@ nav ul {
 }
 
 .menu {
-  background: var(--yellow);
+  background: transparent;
   max-width: 500px;
   width: 80%;
   display: flex;
@@ -112,6 +112,7 @@ nav ul {
 .invisible {
   right: 0;
   top: 0;
+  background: var(--yellow);
 }
 
 .menu-list {
