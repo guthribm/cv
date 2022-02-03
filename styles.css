@@ -312,6 +312,7 @@ setting the "transform: translateZ() scale()" properties */
   transition: ease-in-out 0.35s;
   padding: 1rem 1.5rem;
   margin-bottom: 4rem;
+  color: var(--yellow);
 }
 
 #resume-btn:hover,
