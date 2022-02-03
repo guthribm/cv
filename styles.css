@@ -804,6 +804,10 @@ form {
   .projects-container {
     gap: 5rem;
   }
+
+  .contact-heading {
+    margin: 2rem auto 4rem;
+  }
 }
 
 /* -----------  Media Query (min 1200)
