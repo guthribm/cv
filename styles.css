@@ -712,6 +712,7 @@ form {
   ::-webkit-scrollbar {
     width: 15px;
     z-index: 11;
+    scrollbar-width: 15px;
   }
 
   /* Track */
@@ -815,6 +816,7 @@ form {
 @media (min-width: 1200px) {
   ::-webkit-scrollbar {
     width: 25px;
+    scrollbar-width: 25px;
   }
 
   .btn a {
