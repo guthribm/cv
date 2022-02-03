@@ -560,6 +560,8 @@ section p {
   padding: 4rem 2rem;
   background: var(--yellow);
   color: var(--dark-blue);
+  /* new below */
+  position: relative;
 }
 
 .contact-me-section p {
@@ -586,6 +588,7 @@ form {
   align-items: flex-start;
   max-width: 600px;
   margin: 0 auto;
+  margin-bottom: 6rem;
 }
 
 .contact-form {
@@ -598,6 +601,8 @@ form {
 }
 
 .form-submit {
+  position: absolute;
+  bottom: 2rem;
   padding: 0.75rem 1.5rem;
   margin: 1rem 0;
   max-width: 300px;
@@ -998,9 +1003,9 @@ form {
     font-size: 2rem;
   }
 
-  .form-submit {
+  /* .form-submit {
     margin: 4rem auto;
-  }
+  } */
 
   .contact-link {
     font-size: 1.25rem;
