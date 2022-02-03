@@ -725,8 +725,8 @@ form {
 
 @media (min-width: 1000px) {
   .hero__title_container {
-    left: 5vw;
-    top: 12vh;
+    left: -10vw;
+    top: -20vh;
     padding: 2rem;
     position: relative;
   }
@@ -819,7 +819,7 @@ form {
 
   .hero__title_container {
     left: 0;
-    top: 10vh;
+    top: -30vh;
   }
 
   .skill-container {
