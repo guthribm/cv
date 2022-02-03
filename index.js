@@ -33,7 +33,7 @@ menuBtn.on("click", menuHandler);
 
 $(".wrapper").on("click", () => {
   console.log("window was clicked");
-  menu.addClass("invisible");
+  menu.removeClass("invisible");
 });
 
 // Intersection Observer for About Me Text
