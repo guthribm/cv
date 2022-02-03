@@ -103,7 +103,7 @@ nav ul {
   padding: 0 0 0 2rem;
   position: absolute;
   z-index: 6;
-  right: 25px;
+  right: 0;
   top: -100%;
   transition: ease-in-out 0.5s;
   margin-top: 4rem;
@@ -745,6 +745,10 @@ form {
     width: calc(100% - 15px);
   }
 
+  .menu {
+    right: 15px;
+  }
+
   /* Handle on hover */
   /* ::-webkit-scrollbar-thumb:hover {
   background: #555;
@@ -752,10 +756,6 @@ form {
 
   .foreground {
     margin-bottom: 11rem;
-  }
-
-  #sun {
-    bottom: 70vh;
   }
 
   .background {
@@ -836,6 +836,10 @@ form {
 
   #navbar {
     width: calc(100% - 25px);
+  }
+
+  .menu {
+    right: 25px;
   }
 
   #profile-img {
