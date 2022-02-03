@@ -722,7 +722,14 @@ form {
 
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: var(--med-blue);
+    background: var(--dark-blue);
+    border-color: var(--yellow);
+    /* box-shadow: 0px 0px 8px 1px var(--dark-blue); */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--yellow);
+    border: 3px solid var(--dark-blue);
   }
 
   #navbar {
@@ -848,6 +855,7 @@ form {
     left: 13vw;
     top: -15vh;
     max-width: 750px;
+    padding: 6rem;
   }
 
   .skill-container {
