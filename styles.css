@@ -112,7 +112,7 @@ nav ul {
 }
 
 .invisible {
-  right: 25px;
+  right: 0;
   top: 0;
 }
 
@@ -718,6 +718,10 @@ form {
     top: -15vh;
     padding: 2rem;
     position: relative;
+  }
+
+  .invisible {
+    right: 25px;
   }
 
   /* width */
