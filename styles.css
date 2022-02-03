@@ -80,6 +80,7 @@ nav {
   justify-content: space-between;
   align-items: center;
   background: var(--dark-blue);
+  color: var(--yellow);
   z-index: 10;
   transition: top 0.3s;
 }
@@ -140,17 +141,18 @@ nav ul {
 }
 
 .logo {
-  color: var(--yellow);
+  color: inherit;
   font-size: 1.5rem;
   letter-spacing: 3px;
-  margin-left: 0.5rem;
+  margin-left: 1rem;
   transition: ease-in-out 0.35s;
 }
 
 .logo:hover,
 .logo:focus,
 .logo:active {
-  transform: scale(1.1);
+  transform: scale(1.2);
+  color: #fff;
 }
 
 .logo:visited {
