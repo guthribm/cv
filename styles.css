@@ -266,7 +266,7 @@ and "scale()" will decrease proportionally to the wrapper
 "perspective" property*/
 .foreground {
   transform: translateY(12rem) translateZ(-5px) scale(2);
-  
+
   margin-bottom: 2rem;
 }
 
@@ -296,7 +296,7 @@ setting the "transform: translateZ() scale()" properties */
 }
 
 #about hr {
-  margin-bottom: 4rem;
+  margin: 2rem auto;
 }
 
 #about p {
@@ -338,8 +338,8 @@ setting the "transform: translateZ() scale()" properties */
 }
 
 section p {
-  line-height: 1.7;
-  font-size: 1rem;
+  line-height: 1.6;
+  font-size: 1.25rem;
   transform: translateX(-5rem);
   opacity: 0;
   transition: ease-in-out 0.8s;
@@ -622,7 +622,7 @@ form {
   justify-content: center;
   align-items: center;
   color: var(--yellow);
-  font-size: 0.65rem;
+  font-size: 0.8rem;
 }
 
 .contact-icon {
@@ -681,8 +681,6 @@ form {
     padding: 1rem;
   } */
 
-  
-
   .contact-link {
     font-size: 1rem;
   }
@@ -707,32 +705,30 @@ form {
     padding: 2rem;
     position: relative;
   }
-  
-/* width */
-::-webkit-scrollbar {
-  width: 15px;    
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--yellow);
-}
+  /* width */
+  ::-webkit-scrollbar {
+    width: 15px;
+  }
 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--med-blue);
-  
-}
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: var(--yellow);
+  }
 
-#navbar {
-  width: calc(100% - 15px);
-}
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--med-blue);
+  }
 
-/* Handle on hover */
-/* ::-webkit-scrollbar-thumb:hover {
+  #navbar {
+    width: calc(100% - 15px);
+  }
+
+  /* Handle on hover */
+  /* ::-webkit-scrollbar-thumb:hover {
   background: #555;
 } */
-
 
   .foreground {
     margin-bottom: 11rem;
@@ -802,9 +798,8 @@ form {
 ------------------------------ */
 
 @media (min-width: 1200px) {
-
   ::-webkit-scrollbar {
-    width: 25px;    
+    width: 25px;
   }
 
   #navbar {
