@@ -4,6 +4,7 @@
   --med-blue: #005082;
   --light-blue: #00a8cc;
   --yellow: #ffa41b;
+  --form-font: "IBM Plex Mono", monospace;
 }
 
 *,
@@ -69,12 +70,12 @@ a {
 }
 
 nav {
-  height: 4rem;
+  height: 60px;
   margin: 0;
   padding: 0.5rem;
   position: fixed;
   width: 100%;
-  top: 0;
+  /* top: 0; */
   z-index: 5;
   display: flex;
   justify-content: space-between;
@@ -82,7 +83,11 @@ nav {
   background: var(--dark-blue);
   color: var(--yellow);
   z-index: 10;
-  transition: top 0.3s;
+  transition: 0.3s;
+}
+
+#navbar {
+  top: 0;
 }
 
 nav ul {
@@ -592,6 +597,7 @@ form {
 }
 
 .contact-form {
+  font-family: var(--form-font);
   font-size: 1.5rem;
   padding: 0.25rem;
   margin: 0.5rem auto;

@@ -2,26 +2,40 @@ let date = $("#date");
 let menu = $("#menu");
 let menuBtn = $("#hamburger");
 let menuLinks = $(".menu-link");
+let menuLinkButtons = document.querySelectorAll(".menu-link");
 let navBar = $("#navbar");
+let lastScrollTop = 0;
 
-// let body = document.body;
-// body.addEventListener("scroll", function (event) {
-//   console.log(`something happened. window.scrollY: ${document.window.scrollY}`);
+// Scrolling Navbar Hider Attempt Below
+// window.addEventListener("scroll", function () {
+//   let scrollTop = window.scrollY || document.documentElement.scrollTop;
+//   if (scrollTop > lastScrollTop) {
+//     navBar.style.top = "-60px";
+//     console.log("scrolling down, hiding navbar");
+//   } else {
+//     navBar.style.top = "0";
+//     console.log("NOT scolling, NAVBAR should be visible");
+//   }
+//   lastScrollTop = scrollTop;
+//   console.log("so, did anything happen?");
 // });
 
 // Gets current year and displays for copyright
 let today = new Date();
 date[0].textContent = today.getFullYear();
 
-console.log(
-  "menu links length: " + menuLinks.length + " links: " + menuLinks[0]
-);
+// console.log(
+//   "menu links length: " + menuLinks.length + " links: " + menuLinks[0]
+// );
 
-let menuLinkButtons = document.querySelectorAll(".menu-link");
-
+// Adds event listener that closes menu when link is clicked
 menuLinkButtons.forEach((button) => {
   button.addEventListener("click", () => {
-    menu.toggleClass("invisible");
+    setTimeout(() => {
+      console.log("waiting to play button animation");
+      menu.toggleClass("invisible");
+    }, 300);
+    console.log("animation complete, menu turning invisible");
   });
 });
 
