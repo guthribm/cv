@@ -110,8 +110,8 @@ nav ul {
   top: -100vh;
   transition: ease-in-out 0.5s;
   margin-top: 4rem;
-  box-shadow: -5px 5px 8px 1px rgba(0, 8, 57, 0.6),
-    -15px 15px 5px rgba(0, 8, 57, 0.4);
+  box-shadow: -5px 5px 8px 1px rgba(0, 8, 57, 0.5),
+    -15px 20px 3px rgba(0, 8, 57, 0.1);
 }
 
 .invisible {
@@ -752,7 +752,6 @@ form {
   ::-webkit-scrollbar-thumb {
     background: var(--dark-blue);
     border-color: var(--yellow);
-    /* box-shadow: 0px 0px 8px 1px var(--dark-blue); */
   }
 
   ::-webkit-scrollbar-thumb:hover {
@@ -1008,10 +1007,6 @@ form {
   #contact p {
     font-size: 2rem;
   }
-
-  /* .form-submit {
-    margin: 4rem auto;
-  } */
 
   .contact-link {
     font-size: 1.25rem;

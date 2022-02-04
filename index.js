@@ -3,22 +3,8 @@ let menu = $("#menu");
 let menuBtn = $("#hamburger");
 let menuLinks = $(".menu-link");
 let menuLinkButtons = document.querySelectorAll(".menu-link");
-let navBar = $("#navbar");
-let lastScrollTop = 0;
 
 // Scrolling Navbar Hider Attempt Below
-// window.addEventListener("scroll", function () {
-//   let scrollTop = window.scrollY || document.documentElement.scrollTop;
-//   if (scrollTop > lastScrollTop) {
-//     navBar.style.top = "-60px";
-//     console.log("scrolling down, hiding navbar");
-//   } else {
-//     navBar.style.top = "0";
-//     console.log("NOT scolling, NAVBAR should be visible");
-//   }
-//   lastScrollTop = scrollTop;
-//   console.log("so, did anything happen?");
-// });
 
 // Gets current year and displays for copyright
 let today = new Date();
