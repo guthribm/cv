@@ -167,7 +167,7 @@ nav ul {
 }
 
 #hamburger {
-  color: var(--yellow);
+  color: inherit;
   font-size: 1.5rem;
   margin-right: 1rem;
   position: static;
@@ -368,6 +368,7 @@ section p {
 .fade-in {
   transform: translateX(0);
   opacity: 1;
+  transition: ease-in-out 1s;
 }
 
 #skills {

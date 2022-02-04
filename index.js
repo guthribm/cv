@@ -3,16 +3,14 @@ let menu = $("#menu");
 let menuBtn = $("#hamburger");
 let menuLinks = $(".menu-link");
 let menuLinkButtons = document.querySelectorAll(".menu-link");
+let wrapper = document.querySelector(".wrapper");
+let navBar = document.getElementById("navbar");
 
 // Scrolling Navbar Hider Attempt Below
 
 // Gets current year and displays for copyright
 let today = new Date();
 date[0].textContent = today.getFullYear();
-
-// console.log(
-//   "menu links length: " + menuLinks.length + " links: " + menuLinks[0]
-// );
 
 // Adds event listener that closes menu when link is clicked
 menuLinkButtons.forEach((button) => {
@@ -46,7 +44,10 @@ const options = {
 
 const observer = new IntersectionObserver(function (entries, observer) {
   entries.forEach((entry) => {
-    entry.target.classList.toggle("fade-in");
+    entry.target.classList.toggle("fade-in", entry.isIntersecting);
+    // if (entry.isIntersecting) {
+    //   observer.unobserve(entry.target);
+    // }
   });
 }, options);
 

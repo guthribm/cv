@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="theme-color" content="#000839" />
+    <!-- Theme Color -->
+    <meta id="meta-theme" name="theme-color" content="#000839" />
+    <!-- Author -->
     <meta name="author" content="Brandon Guthrie" />
+    <!-- Description -->
     <meta
       name="description"
       content="My name is Brandon and I am a Front-end Web Developer skilled in creating web pages and apps in Semantic HTML5 and responsive CSS. Let's work together!"
     />
+    <!-- Keywords -->
     <meta
       name="keywords"
       content="front-end frontend front end web developer"
@@ -52,26 +56,26 @@
   </head>
   <body>
     <!-- Navigation Bar -->
-    <nav id="navbar">
+    <nav class="bar" id="navbar">
       <a class="logo" href="https://guthribm.github.io/cv/">BG</a>
       <div id="hamburger"><i class="fas fa-bars"></i></div>
     </nav>
     <!-- Hidden Hamburger Menu -->
     <div id="menu" class="menu">
       <ul class="menu-list">
-        <li><a class="menu-link slide test" href="#home">Home</a></li>
-        <li><a class="menu-link slide test" href="#about">About</a></li>
+        <li><a class="menu-link slide" href="#home">Home</a></li>
+        <li><a class="menu-link slide" href="#about">About</a></li>
         <li>
-          <a class="menu-link slide test" href="#skills">Skills</a>
+          <a class="menu-link slide" href="#skills">Skills</a>
         </li>
         <li>
-          <a class="menu-link slide test" href="#projects">Projects</a>
+          <a class="menu-link slide" href="#projects">Projects</a>
         </li>
         <li>
-          <a class="menu-link slide test" href="#contact">Contact</a>
+          <a class="menu-link slide" href="#contact">Contact</a>
         </li>
         <li>
-          <a class="menu-link slide test" href="#footer">Social Media</a>
+          <a class="menu-link slide" href="#footer">Social Media</a>
         </li>
       </ul>
     </div>
@@ -79,7 +83,7 @@
     <div class="wrapper">
       <div class="link-target" id="home"></div>
       <!-- Hero Wrapper -->
-      <header>
+      <header class="yellow">
         <div id="sun"></div>
         <img
           width="1200"
@@ -359,7 +363,7 @@
 
       <!-- Contact Me Section -->
       <div class="link-target" id="contact-target"></div>
-      <section id="contact" class="contact-me-section">
+      <section id="contact" class="contact-me-section yellow">
         <h2 class="heading contact-heading">Contact Me</h2>
         <p>
           If you're interested in working together or just want to connect, fell
