@@ -661,7 +661,7 @@ form {
 }
 
 .attribution {
-  text-align: center;
+  text-align: right;
   background: var(--dark-blue);
   padding: 2.5rem 1rem;
   font-size: 0.5rem;
