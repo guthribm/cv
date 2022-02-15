@@ -63,6 +63,8 @@ A neat hover/click effect for the menu buttons that fill in the background color
 }
 ```
 
+MORE IMPORTANTLY, I learned that cool animations are useless if you don't set a setTimeout function long enough to for the animation to play and see it! 🤣
+
 ## Author
 
 - LinkedIn - [@guthribm](https://www.linkedin.com/in/guthribm/)
