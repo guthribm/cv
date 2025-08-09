@@ -13,17 +13,6 @@ const skills = [
   },
   { name: "C#", icon: <i className="fas fa-code" />, color: "#9b4f96" },
   { name: ".NET", icon: <i className="fas fa-server" />, color: "#512bd4" },
-  {
-    name: "JQuery",
-    icon: (
-      <img
-        src="/cv-react/images/skill-jquery-png.png"
-        alt="jQuery"
-        style={{ width: 32, height: 32 }}
-      />
-    ),
-    color: "#0769ad",
-  },
   { name: "Git", icon: <i className="fab fa-git-alt" />, color: "#f34f29" },
   { name: "Node.js", icon: <i className="fab fa-node-js" />, color: "#68a063" },
   {
