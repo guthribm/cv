@@ -15,7 +15,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 const projects = [
   {
     title: "Tlancer Landing Page",
-    image: "/cv-react/images/tlancer.webp",
+    image: "/cv/images/tlancer.webp",
     tools: ["ReactJS", "Bootstrap", "HTML", "CSS", "JavaScript"],
     description:
       "Developed a modern, responsive landing page for Tlancer using React and Bootstrap. Implemented a custom language toggler and integrated frontend forms with backend APIs. Currently contributing to the MVP of the company's educational platform.",
@@ -24,7 +24,7 @@ const projects = [
   },
   {
     title: "WeatherExpress.js",
-    image: "/cv-react/images/weatherApp.webp",
+    image: "/cv/images/weatherApp.webp",
     tools: ["NodeJS", "ExpressJS", "EJS", "HTML", "CSS", "JavaScript", "NPM"],
     description:
       "Built a backend weather application using Node.js, Express, and EJS templates. Integrated OpenWeather API for real-time data and implemented dynamic views for enhanced user experience.",
@@ -33,7 +33,7 @@ const projects = [
   },
   {
     title: "Tic.Tac.Toe",
-    image: "/cv-react/images/tictactoimg.webp",
+    image: "/cv/images/tictactoimg.webp",
     tools: ["ReactJS", "HTML", "CSS", "JavaScript"],
     description:
       "Enhanced the classic Tic Tac Toe game with score tracking and custom animations. Built with React for interactive gameplay and a polished UI.",
@@ -42,7 +42,7 @@ const projects = [
   },
   {
     title: "The One and Oney Business Page",
-    image: "/cv-react/images/oneyScreens.webp",
+    image: "/cv/images/oneyScreens.webp",
     tools: ["JQuery", "HTML", "CSS", "JavaScript"],
     description:
       "Designed, photographed, and developed a mobile-first business website. Optimized assets and implemented responsive layouts for seamless user experience.",
@@ -51,7 +51,7 @@ const projects = [
   },
   {
     title: "Simple BlackJack",
-    image: "/cv-react/images/blackjack-screens.webp",
+    image: "/cv/images/blackjack-screens.webp",
     tools: ["HTML", "CSS", "JavaScript"],
     description:
       "Created a responsive BlackJack game using ES6 and deckofcardsapi.com. Features modern UI and mobile-friendly design.",
@@ -60,7 +60,7 @@ const projects = [
   },
   {
     title: "Rock | Paper | Scissors",
-    image: "/cv-react/images/rps-screens.webp",
+    image: "/cv/images/rps-screens.webp",
     tools: ["HTML", "CSS", "JavaScript"],
     description:
       "Developed a fully responsive Rock, Paper, Scissors app with smooth animations and event-driven gameplay. Built as a FrontendMentor.io challenge.",
@@ -69,7 +69,7 @@ const projects = [
   },
   {
     title: "Splitter Tip Calculator",
-    image: "/cv-react/images/splitter-screens.webp",
+    image: "/cv/images/splitter-screens.webp",
     tools: ["HTML", "CSS", "JavaScript"],
     description:
       "Designed a tip calculator with responsive layouts using Flexbox and Grid. Enhanced UX for both mobile and desktop users.",

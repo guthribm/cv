@@ -7,7 +7,7 @@ export default function About() {
       <section id="about">
         <img
           id="profile-img"
-          src="/cv-react/images/dog_whisper.jpg"
+          src="/cv/images/dog_whisper.jpg"
           alt="me holding a sleeping doggo"
         />
         <h2 className="heading">That's me on the left.</h2>
@@ -32,7 +32,7 @@ export default function About() {
         <a
           id="resume-btn"
           className="resume-wrapper btn"
-          href="/cv-react/images/Brandon_Guthrie_Developer_2023_Resume.pdf"
+          href="/cv/images/Brandon_Guthrie_Developer_2023_Resume.pdf"
           download
         >
           Download Resume
