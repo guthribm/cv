@@ -102,12 +102,12 @@ export default function Hero() {
       />
 
       <img
-  src="/cv-react/images/geometric_mountains_png.png"
+        src="/cv-react/images/geometric_mountains_png.png"
         alt="snowy mountains"
         className="background"
       />
       <img
-  src="/cv-react/images/Halloween-silhouette-forest_png.png"
+        src="/cv-react/images/Halloween-silhouette-forest_png.png"
         alt="forest silhouette"
         className="foreground tree"
       />
