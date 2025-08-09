@@ -17,7 +17,7 @@ const skills = [
     name: "JQuery",
     icon: (
       <img
-        src="/images/skill-jquery-png.png"
+  src="/cv-react/images/skill-jquery-png.png"
         alt="jQuery"
         style={{ width: 32, height: 32 }}
       />
