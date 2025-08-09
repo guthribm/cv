@@ -2,7 +2,7 @@
   "name": "cv_react",
   "private": true,
   "version": "0.0.1",
-  "homepage": "https://guthribm.github.io/cv_react",
+  "homepage": "https://guthribm.github.io/cv-react",
   "type": "module",
   "scripts": {
     "dev": "vite",

@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 // https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/cv_react/", // Set base path for GitHub Pages
+  base: "/cv-react/", // Correct base path (repo name has hyphen)
 });
