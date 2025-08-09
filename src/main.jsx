@@ -6,11 +6,11 @@ import App from "./App.jsx";
 
 const rootElement = document.getElementById("root");
 if (!rootElement) {
-	console.error("[main.jsx] ERROR: #root element not found in index.html");
+  console.error("[main.jsx] ERROR: #root element not found in index.html");
 } else {
-	console.log("[main.jsx] #root element found, rendering App...");
-	createRoot(rootElement).render(<App />);
-	console.log("[main.jsx] App rendered");
+  console.log("[main.jsx] #root element found, rendering App...");
+  createRoot(rootElement).render(<App />);
+  console.log("[main.jsx] App rendered");
 }
 
 const root = document.getElementById("root");
