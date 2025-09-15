@@ -13,16 +13,16 @@ import LaunchIcon from "@mui/icons-material/Launch";
 import GitHubIcon from "@mui/icons-material/GitHub";
 
 const projects = [
-  {
-    title: "Healthcare Provider Platform",
-    image: "/cv/images/tlancer.webp", // We'll use the same placeholder image for now
-    tools: ["React", "Material-UI", "C#", "ASP.NET", "MongoDB", "Angular"],
-    description:
-      "Led the migration of a large-scale healthcare provider application from Angular to React. Designed and implemented patient care plan interfaces, built patient onboarding APIs, and created clinical workflow UI components. Improved application performance and user experience for healthcare professionals.",
-    site: "",
-    repo: "",
-    isDisabled: true,
-  },
+  //   {
+  //     title: "Healthcare Provider Platform",
+  //     image: "/cv/images/tlancer.webp", // We'll use the same placeholder image for now
+  //     tools: ["React", "Material-UI", "C#", "ASP.NET", "MongoDB", "Angular"],
+  //     description:
+  //       "Led the migration of a large-scale healthcare provider application from Angular to React. Designed and implemented patient care plan interfaces, built patient onboarding APIs, and created clinical workflow UI components. Improved application performance and user experience for healthcare professionals.",
+  //     site: "",
+  //     repo: "",
+  //     isDisabled: true,
+  //   },
   {
     title: "Tlancer Educational Platform",
     image: "/cv/images/tlancer.webp",
