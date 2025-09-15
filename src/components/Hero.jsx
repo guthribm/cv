@@ -119,7 +119,7 @@ export default function Hero() {
           </span>
         </h1>
         <hr />
-        <h2 className="subtitle">a software developer</h2>
+        <h2 className="subtitle">a full-stack developer</h2>
       </div>
     </header>
   );

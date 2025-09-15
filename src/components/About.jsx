@@ -10,29 +10,40 @@ export default function About() {
           src="/cv/images/dog_whisper.jpg"
           alt="me holding a sleeping doggo"
         />
-        <h2 className="heading">That's me on the left.</h2>
+        <h2 className="heading" fontStyle="italic">
+          That's me on the left.
+        </h2>
         <hr />
         <p className="fade-in">
           I love coding about as much as my buddy Scout loves sleeping. And he{" "}
           <em>really</em> likes to sleep! 😃
         </p>
         <p className="fade-in">
-          I am a self-taught programmer that enjoys creating beautiful web pages
-          and apps written in Semantic HTML5 and responsive CSS3.
+          I am a full-stack developer with 3+ years of professional experience
+          building modern web applications using React, TypeScript, Material-UI,
+          C#, ASP.NET, and MongoDB.
         </p>
         <p className="fade-in">
-          While the first (and probably my favorite) programming language that I
-          learned was Python at the beginning of 2021, I spend most of my time
-          now writing in JavaScript ES6.
+          I've spent the majority of my time leading the conversion of a
+          large-scale healthcare provider application from Angular to React,
+          where I designed and implemented patient care plan interfaces, built
+          onboarding APIs, and created intuitive UI components for clinical
+          workflows.
         </p>
         <p className="fade-in">
-          I am currently looking to join a team that will help mentor an
-          inquisitive problem-solver with a desire to learn.
+          My experience spans various technologies and project types - from
+          Chrome CRM extensions and Next.js applications to backend services
+          using AdonisJS. I'm passionate about creating clean, maintainable code
+          and user-centered designs.
+        </p>
+        <p className="fade-in">
+          I'm always eager to tackle new challenges and contribute to innovative
+          projects that make a meaningful impact.
         </p>
         <a
           id="resume-btn"
           className="resume-wrapper btn"
-          href="/cv/images/Brandon_Guthrie_Developer_2023_Resume.pdf"
+          href="/cv/images/Brandon_Guthrie_Resume_2025.pdf"
           download
         >
           Download Resume

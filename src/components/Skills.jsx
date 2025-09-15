@@ -1,23 +1,31 @@
 import React from "react";
+import viteLogo from "../assets/vite.svg";
 
 // Skill data
 const skills = [
   { name: "React", icon: <i className="fab fa-react" />, color: "#61dafb" },
   { name: "JavaScript", icon: <i className="fab fa-js" />, color: "#f7df1e" },
-  { name: "HTML5", icon: <i className="fab fa-html5" />, color: "#e34c26" },
-  { name: "CSS3", icon: <i className="fab fa-css3-alt" />, color: "#2965f1" },
+  { name: "TypeScript", icon: <i className="fab fa-js" />, color: "#007acc" },
   {
     name: "Material UI",
     icon: <i className="fab fa-uikit" />,
     color: "#007fff",
   },
   { name: "C#", icon: <i className="fas fa-code" />, color: "#9b4f96" },
-  { name: ".NET", icon: <i className="fas fa-server" />, color: "#512bd4" },
-  { name: "Git", icon: <i className="fab fa-git-alt" />, color: "#f34f29" },
+  { name: "ASP.NET", icon: <i className="fas fa-server" />, color: "#512bd4" },
+  {
+    name: "MongoDB",
+    icon: <i className="fas fa-database" />,
+    color: "#4db33d",
+  },
+  { name: "Next.js", icon: <i className="fab fa-react" />, color: "#000000" },
   { name: "Node.js", icon: <i className="fab fa-node-js" />, color: "#68a063" },
+  { name: "HTML5", icon: <i className="fab fa-html5" />, color: "#e34c26" },
+  { name: "CSS3", icon: <i className="fab fa-css3-alt" />, color: "#2965f1" },
+  { name: "Git", icon: <i className="fab fa-git-alt" />, color: "#f34f29" },
   {
     name: "Vite",
-    icon: <img src="/vite.svg" alt="Vite" style={{ width: 32, height: 32 }} />,
+    icon: <img src={viteLogo} alt="Vite" style={{ width: 48, height: 48 }} />,
     color: "#646cff",
   },
 ];

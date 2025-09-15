@@ -14,13 +14,24 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 const projects = [
   {
-    title: "Tlancer Landing Page",
-    image: "/cv/images/tlancer.webp",
-    tools: ["ReactJS", "Bootstrap", "HTML", "CSS", "JavaScript"],
+    title: "Healthcare Provider Platform",
+    image: "/cv/images/tlancer.webp", // We'll use the same placeholder image for now
+    tools: ["React", "Material-UI", "C#", "ASP.NET", "MongoDB", "Angular"],
     description:
-      "Developed a modern, responsive landing page for Tlancer using React and Bootstrap. Implemented a custom language toggler and integrated frontend forms with backend APIs. Currently contributing to the MVP of the company's educational platform.",
+      "Led the migration of a large-scale healthcare provider application from Angular to React. Designed and implemented patient care plan interfaces, built patient onboarding APIs, and created clinical workflow UI components. Improved application performance and user experience for healthcare professionals.",
+    site: "",
+    repo: "",
+    isDisabled: true,
+  },
+  {
+    title: "Tlancer Educational Platform",
+    image: "/cv/images/tlancer.webp",
+    tools: ["React", "Bootstrap", "Next.js", "JavaScript", "APIs"],
+    description:
+      "Developed modern, responsive web applications for Tlancer's educational platform. Built landing pages, implemented custom features, and integrated frontend forms with backend APIs. Contributed to multiple Next.js projects and platform MVP development.",
     site: "https://www.tlancer.ge/",
     repo: "https://github.com/Tlancerinc/Tlancermain",
+    isDisabled: true,
   },
   {
     title: "WeatherExpress.js",
@@ -30,6 +41,7 @@ const projects = [
       "Built a backend weather application using Node.js, Express, and EJS templates. Integrated OpenWeather API for real-time data and implemented dynamic views for enhanced user experience.",
     site: "https://calm-springs-33834.herokuapp.com/",
     repo: "https://github.com/guthribm/WeatherExpress",
+    isDisabled: true,
   },
   {
     title: "Tic.Tac.Toe",
@@ -39,16 +51,17 @@ const projects = [
       "Enhanced the classic Tic Tac Toe game with score tracking and custom animations. Built with React for interactive gameplay and a polished UI.",
     site: "https://guthribm.github.io/tic-tac-toe/",
     repo: "https://github.com/guthribm/tic-tac-toe",
+    isDisabled: false,
   },
-  {
-    title: "The One and Oney Business Page",
-    image: "/cv/images/oneyScreens.webp",
-    tools: ["JQuery", "HTML", "CSS", "JavaScript"],
-    description:
-      "Designed, photographed, and developed a mobile-first business website. Optimized assets and implemented responsive layouts for seamless user experience.",
-    site: "https://www.theoneandoneydispo.com/",
-    repo: "https://github.com/guthribm/OneAndOney",
-  },
+  //   {
+  //     title: "The One and Oney Business Page",
+  //     image: "/cv/images/oneyScreens.webp",
+  //     tools: ["JQuery", "HTML", "CSS", "JavaScript"],
+  //     description:
+  //       "Designed, photographed, and developed a mobile-first business website. Optimized assets and implemented responsive layouts for seamless user experience.",
+  //     site: "https://www.theoneandoneydispo.com/",
+  //     repo: "https://github.com/guthribm/OneAndOney",
+  //   },
   {
     title: "Simple BlackJack",
     image: "/cv/images/blackjack-screens.webp",
@@ -57,6 +70,7 @@ const projects = [
       "Created a responsive BlackJack game using ES6 and deckofcardsapi.com. Features modern UI and mobile-friendly design.",
     site: "https://guthribm.github.io/SimpleBlackJack/",
     repo: "https://github.com/guthribm/SimpleBlackJack",
+    isDisabled: false,
   },
   {
     title: "Rock | Paper | Scissors",
@@ -66,6 +80,7 @@ const projects = [
       "Developed a fully responsive Rock, Paper, Scissors app with smooth animations and event-driven gameplay. Built as a FrontendMentor.io challenge.",
     site: "https://guthribm.github.io/rock-paper-scissors/",
     repo: "https://github.com/guthribm/rock-paper-scissors",
+    isDisabled: false,
   },
   {
     title: "Splitter Tip Calculator",
@@ -75,6 +90,7 @@ const projects = [
       "Designed a tip calculator with responsive layouts using Flexbox and Grid. Enhanced UX for both mobile and desktop users.",
     site: "https://guthribm.github.io/splitter-tip-calculator/",
     repo: "https://github.com/guthribm/splitter-tip-calculator",
+    isDisabled: false,
   },
 ];
 
@@ -106,13 +122,22 @@ export default function Projects() {
       >
         Featured Projects
       </Typography>
-      <Grid container spacing={4} justifyContent="center">
+      <Grid
+        container
+        spacing={4}
+        justifyContent="center"
+        sx={{ maxWidth: "1200px" }}
+      >
         {projects.map((project, idx) => (
-          <Grid item xs={12} sm={6} md={4} key={project.title}>
+          <Grid item key={project.title}>
             <Fade in timeout={800 + idx * 100}>
               <Card
                 elevation={6}
                 sx={{
+                  width: 400,
+                  height: 590,
+                  display: "flex",
+                  flexDirection: "column",
                   borderRadius: 4,
                   background: "linear-gradient(135deg, #222 60%, #415a77 100%)",
                   color: "#fff",
@@ -120,19 +145,41 @@ export default function Projects() {
                   transition:
                     "transform 0.3s cubic-bezier(.25,1,.5,1), box-shadow 0.3s",
                   "&:hover": {
-                    transform: "scale(1.04) translateY(-4px)",
+                    transform: "scale(1.02) translateY(-4px)",
                     boxShadow: `0 8px 32px 0 #61dafb55`,
                   },
                 }}
               >
-                <CardMedia
-                  component="img"
-                  height="180"
-                  image={project.image}
-                  alt={project.title}
-                  sx={{ borderRadius: 4, objectFit: "cover" }}
-                />
-                <CardContent>
+                <Box
+                  sx={{
+                    position: "relative",
+                    width: "100%",
+                    height: 200,
+                    overflow: "hidden",
+                    borderRadius: "16px 16px 0 0",
+                  }}
+                >
+                  <CardMedia
+                    component="img"
+                    image={project.image}
+                    alt={project.title}
+                    sx={{
+                      width: "100%",
+                      height: "100%",
+                      objectFit: "contain",
+                      objectPosition: "center",
+                      backgroundColor: "#f5f5f5",
+                    }}
+                  />
+                </Box>
+                <CardContent
+                  sx={{
+                    flex: 1,
+                    display: "flex",
+                    flexDirection: "column",
+                    p: 3,
+                  }}
+                >
                   <Typography variant="h5" fontWeight={700} gutterBottom>
                     {project.title}
                   </Typography>
@@ -150,17 +197,36 @@ export default function Projects() {
                       />
                     ))}
                   </Box>
-                  <Typography variant="body1" sx={{ mb: 2, minHeight: 64 }}>
+                  <Typography
+                    variant="body1"
+                    sx={{
+                      mb: 3,
+                      flex: 1,
+                      fontSize: "0.9rem",
+                      lineHeight: 1.5,
+                    }}
+                  >
                     {project.description}
                   </Typography>
-                  <Box sx={{ display: "flex", gap: 2 }}>
+                  <Box
+                    sx={{
+                      display: "flex",
+                      gap: 2,
+                      flexDirection: "column",
+                      mt: "auto",
+                    }}
+                  >
                     <Button
                       variant="contained"
+                      disabled={project.isDisabled}
                       color="primary"
                       href={project.site}
                       target="_blank"
                       startIcon={<LaunchIcon />}
-                      sx={{ fontWeight: 700, textTransform: "none" }}
+                      sx={{
+                        fontWeight: 700,
+                        textTransform: "none",
+                      }}
                     >
                       Live Site
                     </Button>
@@ -170,7 +236,10 @@ export default function Projects() {
                       href={project.repo}
                       target="_blank"
                       startIcon={<GitHubIcon />}
-                      sx={{ fontWeight: 700, textTransform: "none" }}
+                      sx={{
+                        fontWeight: 700,
+                        textTransform: "none",
+                      }}
                     >
                       Repo
                     </Button>

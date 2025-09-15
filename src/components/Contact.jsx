@@ -7,8 +7,10 @@ export default function Contact() {
       <section id="contact" className="contact-me-section accent-bg">
         <h2 className="heading contact-heading">Contact Me</h2>
         <p>
-          If you're interested in working together or just want to connect, feel
-          free to send me a message!
+          I'm a full-stack developer with 3+ years of experience in React, C#,
+          and modern web technologies. Whether you're looking for someone to
+          join your team or want to discuss a project, I'd love to hear from
+          you!
         </p>
         <form action="https://formsubmit.co/guthribm@gmail.com" method="POST">
           <label htmlFor="name"></label>
